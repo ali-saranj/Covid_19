@@ -182,6 +182,7 @@
                         android:layout_marginTop="20dp"
                         android:text="global stats"
                         android:textAllCaps="true"
+                        android:gravity="left"
                         android:textSize="28sp"
                         android:textStyle="bold" />
 

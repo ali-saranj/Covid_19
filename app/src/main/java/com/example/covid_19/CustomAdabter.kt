@@ -1,6 +1,8 @@
 package com.example.covid_19
 
+import android.annotation.SuppressLint
 import android.provider.Contacts
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,11 +13,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import java.util.*
+import kotlin.collections.ArrayList
 import kotlin.time.measureTimedValue
 
 
 class CustomAdapter(private val dataSet: ArrayList<contry>) :
-    RecyclerView.Adapter<CustomAdapter.ViewHolder>(), Filterable {
+    RecyclerView.Adapter<CustomAdapter.ViewHolder>(){
     lateinit var dataSetfil: ArrayList<contry>
 
     init {
@@ -57,38 +61,6 @@ class CustomAdapter(private val dataSet: ArrayList<contry>) :
     }
 
     override fun getItemCount() = dataSet.size
-
-    override fun getFilter(): Filter {
-        return object : Filter() {
-            override fun performFiltering(constraint: CharSequence?): FilterResults {
-                val charString = constraint?.toString() ?: ""
-                if (charString.isEmpty()) dataSetfil = dataSet else {
-                    val filteredList = ArrayList<contry>()
-                    dataSet
-                        .filter {
-                            (it.name_contry.contains(constraint!!)) or
-                                    (it.name_contry.contains(constraint))
-
-                        }
-                        .forEach { filteredList.add(it) }
-                    dataSetfil = filteredList
-
-                }
-                return FilterResults().apply { values = dataSetfil }
-            }
-
-            override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
-
-                dataSetfil = if (results?.values == null)
-                    ArrayList()
-                else
-                    results.values as ArrayList<contry>
-                notifyDataSetChanged()
-            }
-        }
-
-
-    }
 
 }
 

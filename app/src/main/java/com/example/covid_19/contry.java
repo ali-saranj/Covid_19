@@ -1,5 +1,10 @@
 package com.example.covid_19;
 
+import android.util.Log;
+
+import java.util.ArrayList;
+import java.util.Locale;
+
 public class contry {
 
     String img_flag ;
@@ -95,4 +100,21 @@ public class contry {
     public void setActive(int active) {
         this.active = active;
     }
+
+    public static ArrayList<contry> filter (String s,ArrayList<contry> contries){
+        ArrayList<contry> contries1 = new ArrayList<>();
+
+        if (s.isEmpty()) {
+            contries1 = contries;
+        } else {
+            for (contry row : contries) {
+                if (row.name_contry.toLowerCase(Locale.ROOT).contains(s.toLowerCase(Locale.ROOT))) {
+                    contries1.add(row);
+                    Log.i("aaa",row.name_contry);
+                }
+            }
+        }
+        return contries1;
+    }
+
 }

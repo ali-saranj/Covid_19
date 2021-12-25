@@ -14,7 +14,11 @@
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_baseline_search_24"
         android:hint="Search"
-        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="left"
         android:padding="8dp"
         android:background="@drawable/backgrand_edt"
         android:elevation="4dp"/>
@@ -23,6 +27,8 @@
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/color_two"/>
+        android:background="@color/color_two">
 
+        <requestFocus/>
+    </androidx.recyclerview.widget.RecyclerView>
 </LinearLayout>

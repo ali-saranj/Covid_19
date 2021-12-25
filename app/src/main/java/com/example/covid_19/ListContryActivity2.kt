@@ -73,13 +73,11 @@ class ListContryActivity2 : AppCompatActivity() {
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
             @SuppressLint("NotifyDataSetChanged")
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
-
-                customAdapter.filter.filter(s)
-                customAdapter.notifyDataSetChanged()
+                customAdapter = CustomAdapter(contry.filter(s.toString(),contrys))
+                list.adapter = customAdapter
             }
             override fun afterTextChanged(s: Editable) {}
         })
-
 
     }
 
