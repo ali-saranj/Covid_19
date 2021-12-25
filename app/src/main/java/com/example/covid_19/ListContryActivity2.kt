@@ -1,9 +1,12 @@
 package com.example.covid_19
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.LinearLayout
-import android.widget.Toast
+import android.text.Editable
+import android.text.TextWatcher
+import android.widget.*
+import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.volley.Request
@@ -17,6 +20,10 @@ class ListContryActivity2 : AppCompatActivity() {
 
     lateinit var contrys: ArrayList<contry>
     lateinit var list: RecyclerView
+    lateinit var edt_search: EditText
+
+    lateinit var customAdapter: CustomAdapter
+
     var img_flag: String? = null
     var name_contry: String? = null
     var cases = 0
@@ -31,6 +38,7 @@ class ListContryActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_list_contry)
 
         list = findViewById(R.id.list)
+        edt_search = findViewById(R.id.edt_search)
 
         contrys = ArrayList()
 
@@ -56,11 +64,23 @@ class ListContryActivity2 : AppCompatActivity() {
                     contrys.add(contry(img_flag,name_contry,cases,today_cases,deaths,today_deaths,recovered,today_recovered,active))
                 }
                 list.layoutManager = LinearLayoutManager(this)
-                list.adapter = CustomAdapter(contrys)
+                customAdapter = CustomAdapter(contrys)
+                list.adapter = customAdapter
             }, { Toast.makeText(this,"Error connect to internet",Toast.LENGTH_LONG).show() })
         queue.add(stringRequest)
 
+        edt_search.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
+            @SuppressLint("NotifyDataSetChanged")
+            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+
+                customAdapter.filter.filter(s)
+                customAdapter.notifyDataSetChanged()
+            }
+            override fun afterTextChanged(s: Editable) {}
+        })
 
 
     }
+
 }
