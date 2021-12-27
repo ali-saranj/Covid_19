@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:padding="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
     android:background="@color/color_white">
 
     <androidx.cardview.widget.CardView
@@ -143,8 +146,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:cardElevation="4dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         app:cardCornerRadius="30dp"
         app:layout_constraintTop_toBottomOf="@id/cardvv"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -506,7 +509,7 @@
         android:id="@+id/btn_go"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="sdasfasdasdf"
+        android:text="List Countrys"
         android:textSize="18sp"
         android:padding="10dp"
         app:layout_constraintLeft_toLeftOf="parent"

@@ -13,10 +13,17 @@
         android:supportsRtl="false"
         android:theme="@style/Theme.Covid_19">
         <activity
+            android:name=".ContryActivity2"
+            android:theme="@style/Theme.Covid_19.NoActionBar"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
             android:name=".ListContryActivity2"
+            android:screenOrientation="portrait"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

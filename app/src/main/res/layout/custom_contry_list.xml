@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="8dp">
+    android:padding="8dp"
+    android:id="@+id/layout_item">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -46,7 +47,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/imageView2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/cases" />
+                app:srcCompat="@drawable/cases2" />
 
             <TextView
                 android:id="@+id/tv_cases_item"

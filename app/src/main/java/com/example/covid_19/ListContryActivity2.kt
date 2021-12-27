@@ -1,10 +1,13 @@
 package com.example.covid_19
 
 import android.annotation.SuppressLint
+import android.location.GnssAntennaInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.view.MotionEvent
+import android.view.View
 import android.widget.*
 import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -42,43 +45,22 @@ class ListContryActivity2 : AppCompatActivity() {
 
         contrys = ArrayList()
 
-        val queue = Volley.newRequestQueue(this)
-        val url = "https://corona.lmao.ninja/v2/countries/"
-
-        val stringRequest = StringRequest(Request.Method.GET, url,
-            { response ->
-                var jsonArray = JSONArray(response)
-                for (a in 0 until jsonArray.length()){
-                    var jsonObject  = jsonArray.getJSONObject(a)
-
-                    cases = jsonObject.getInt("cases")
-                    recovered = jsonObject.getInt("recovered")
-                    deaths = jsonObject.getInt("deaths")
-                    today_cases = jsonObject.getInt("todayCases")
-                    today_recovered = jsonObject.getInt("todayRecovered")
-                    today_deaths = jsonObject.getInt("todayDeaths")
-                    active = jsonObject.getInt("active")
-                    name_contry = jsonObject.getString("country")
-                    img_flag = jsonObject.getJSONObject("countryInfo").getString("flag")
-
-                    contrys.add(contry(img_flag,name_contry,cases,today_cases,deaths,today_deaths,recovered,today_recovered,active))
-                }
-                list.layoutManager = LinearLayoutManager(this)
-                customAdapter = CustomAdapter(contrys)
-                list.adapter = customAdapter
-            }, { Toast.makeText(this,"Error connect to internet",Toast.LENGTH_LONG).show() })
-        queue.add(stringRequest)
+        list.layoutManager = LinearLayoutManager(this)
+        customAdapter = CustomAdapter(G.contrys)
+        list.adapter = customAdapter
 
         edt_search.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
             @SuppressLint("NotifyDataSetChanged")
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
-                customAdapter = CustomAdapter(contry.filter(s.toString(),contrys))
+                customAdapter = CustomAdapter(contry.filter(s.toString(),G.contrys))
                 list.adapter = customAdapter
             }
             override fun afterTextChanged(s: Editable) {}
         })
 
+
     }
 
 }
+

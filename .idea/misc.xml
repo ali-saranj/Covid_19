@@ -3,11 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/backgrand_edt.xml" value="0.22" />
+        <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_coronavirus.xml" value="0.18" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_contry2.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_list_contry.xml" value="0.18143459915611815" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/custom_contry_list.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/custom_contry_list.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/tollbar_contry_activity2.xml" value="0.18" />
       </map>
     </option>
   </component>
