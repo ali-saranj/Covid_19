@@ -10,6 +10,7 @@ import android.widget.TextView
 import com.bumptech.glide.Glide
 import org.eazegraph.lib.charts.PieChart
 import org.eazegraph.lib.models.PieModel
+import java.text.NumberFormat
 
 class ContryActivity2 : AppCompatActivity() {
     lateinit var tv_name :TextView
@@ -37,7 +38,6 @@ class ContryActivity2 : AppCompatActivity() {
 
         btn_back.setOnClickListener{
             it.startAnimation(AnimationUtils.loadAnimation(applicationContext,android.R.anim.fade_in))
-            startActivity(Intent(applicationContext,ListContryActivity2::class.java))
             finish()
         }
     }
@@ -55,15 +55,16 @@ class ContryActivity2 : AppCompatActivity() {
     }
 
     private fun setdata() {
+        var numberf = NumberFormat.getInstance()
         Glide.with(applicationContext).load(G.contrys[pozishen].img_flag).into(img_flag)
-        tv_name.text = G.contrys[pozishen].name_contry
-        tv_recovered.text = G.contrys[pozishen].recovered.toString()
-        tv_cases.text = G.contrys[pozishen].cases.toString()
-        tv_deaths.text = G.contrys[pozishen].deaths.toString()
+        tv_name.text = G.contrys[pozishen].name_contry.toString()
+        tv_recovered.text = numberf.format(G.contrys[pozishen].recovered)
+        tv_cases.text = numberf.format(G.contrys[pozishen].cases)
+        tv_deaths.text = numberf.format(G.contrys[pozishen].deaths)
 
-        PieChart.addPieSlice(PieModel("Total Cases",tv_cases.text.toString().toFloat(),resources.getColor(R.color.cases)))
-        PieChart.addPieSlice(PieModel("Recovered",tv_recovered.text.toString().toFloat(),resources.getColor(R.color.recovered)))
-        PieChart.addPieSlice(PieModel("Deaths",tv_deaths.text.toString().toFloat(),resources.getColor(R.color.deaths)))
+        PieChart.addPieSlice(PieModel("Total Cases",G.contrys[pozishen].cases.toFloat(),resources.getColor(R.color.cases)))
+        PieChart.addPieSlice(PieModel("Recovered",G.contrys[pozishen].recovered.toFloat(),resources.getColor(R.color.recovered)))
+        PieChart.addPieSlice(PieModel("Deaths",G.contrys[pozishen].deaths.toFloat(),resources.getColor(R.color.deaths)))
         PieChart.addPieSlice(PieModel("Active",G.contrys[pozishen].active.toFloat(),resources.getColor(R.color.active)))
         PieChart.startAnimation()
     }

@@ -168,9 +168,9 @@
                 android:elevation="4dp"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:paddingLeft="24dp"
+                android:paddingLeft="18dp"
                 android:paddingTop="8dp"
-                android:paddingRight="24dp"
+                android:paddingRight="18dp"
                 android:paddingBottom="8dp">
 
                 <ImageView
@@ -214,9 +214,9 @@
                 android:elevation="4dp"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:paddingLeft="24dp"
+                android:paddingLeft="18dp"
                 android:paddingTop="8dp"
-                android:paddingRight="24dp"
+                android:paddingRight="18dp"
                 android:paddingBottom="8dp">
 
                 <ImageView
@@ -259,9 +259,9 @@
                 android:elevation="4dp"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:paddingLeft="24dp"
+                android:paddingLeft="18dp"
                 android:paddingTop="8dp"
-                android:paddingRight="24dp"
+                android:paddingRight="18dp"
                 android:paddingBottom="8dp">
 
                 <ImageView

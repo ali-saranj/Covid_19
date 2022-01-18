@@ -43,6 +43,8 @@ class ListContryActivity2 : AppCompatActivity() {
         list = findViewById(R.id.list)
         edt_search = findViewById(R.id.edt_search)
 
+        Toast.makeText(this,resources.getString(R.string.toast_activity_list), Toast.LENGTH_SHORT).show()
+
         contrys = ArrayList()
 
         list.layoutManager = LinearLayoutManager(this)

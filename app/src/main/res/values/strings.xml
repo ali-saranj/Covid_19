@@ -11,4 +11,6 @@
     <string name="affected_countries" translatable="false">Affected Countries</string>
     <string name="list_countrys" translatable="false">List Countries</string>
     <string name="cases" translatable="false">Cases</string>
+    <string name="toast_activity_list" translatable="false">Click on countries for more informationClick on countries for more information</string>
+
 </resources>

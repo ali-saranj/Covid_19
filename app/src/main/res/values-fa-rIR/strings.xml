@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">کرونا</string>
-    <string name="total_cases" translatable="false">مجموع مبتاتها</string>
+    <string name="total_cases" translatable="false">مجموع مبتلاها</string>
     <string name="recovered" translatable="false">درمان شدگان</string>
     <string name="deaths" translatable="false">کشته شدگان</string>
     <string name="active" translatable="false">فعال</string>
@@ -12,4 +12,6 @@
     <string name="affected_countries" translatable="false">کشورهای آسیب دیده</string>
     <string name="critical" translatable="false">بحرانی</string>
     <string name="global_stats" translatable="false">آمار جهانی</string>
+    <string name="toast_activity_list" translatable="false">برای دریافت اطلاعات بیشتر روی کشور ها کلیک کنید</string>
+
 </resources>

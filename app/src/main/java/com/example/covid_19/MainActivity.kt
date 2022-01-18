@@ -14,6 +14,7 @@ import com.leo.simplearcloader.SimpleArcLoader
 import org.eazegraph.lib.charts.PieChart
 import org.eazegraph.lib.models.PieModel
 import org.json.JSONObject
+import java.text.NumberFormat
 
 class MainActivity : AppCompatActivity() {
 
@@ -75,22 +76,24 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setData(data : JSONObject){
+        var numberf = NumberFormat.getInstance()
+
         ppp.visibility = View.GONE
         sss.visibility = View.VISIBLE
 
-        tv_cases.text = data.getInt("cases").toString()
-        tv_active.text = data.getInt("active").toString()
-        tv_affected_countries.text = data.getInt("affectedCountries").toString()
-        tv_recovored.text = data.getInt("recovered").toString()
-        tv_critical.text = data.getInt("critical").toString()
-        tv_today_cases.text = data.getInt("todayCases").toString()
-        tv_today_deaths.text = data.getInt("todayDeaths").toString()
-        tv_total_deaths.text = data.getInt("deaths").toString()
+        tv_cases.text = numberf.format(data.getInt("cases"))
+        tv_active.text = numberf.format(data.getInt("active"))
+        tv_affected_countries.text = numberf.format(data.getInt("affectedCountries"))
+        tv_recovored.text = numberf.format(data.getInt("recovered"))
+        tv_critical.text = numberf.format(data.getInt("critical"))
+        tv_today_cases.text = numberf.format(data.getInt("todayCases"))
+        tv_today_deaths.text = numberf.format(data.getInt("todayDeaths"))
+        tv_total_deaths.text = numberf.format(data.getInt("deaths"))
 
-        pie_chart.addPieSlice(PieModel("Total Cases",tv_cases.text.toString().toFloat(),resources.getColor(R.color.cases)))
-        pie_chart.addPieSlice(PieModel("Recovered",tv_recovored.text.toString().toFloat(),resources.getColor(R.color.recovered)))
-        pie_chart.addPieSlice(PieModel("Deaths",tv_total_deaths.text.toString().toFloat(),resources.getColor(R.color.deaths)))
-        pie_chart.addPieSlice(PieModel("Active",tv_active.text.toString().toFloat(),resources.getColor(R.color.active)))
+        pie_chart.addPieSlice(PieModel("Total Cases",data.getInt("cases").toFloat(),resources.getColor(R.color.cases)))
+        pie_chart.addPieSlice(PieModel("Recovered",data.getInt("recovered").toFloat(),resources.getColor(R.color.recovered)))
+        pie_chart.addPieSlice(PieModel("Deaths",data.getInt("deaths").toFloat(),resources.getColor(R.color.deaths)))
+        pie_chart.addPieSlice(PieModel("Active",data.getInt("active").toFloat(),resources.getColor(R.color.active)))
         pie_chart.startAnimation()
 
     }

@@ -11,6 +11,7 @@ import android.widget.*
 import android.widget.Filter.FilterResults
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import java.text.NumberFormat
 import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.time.measureTimedValue
@@ -51,10 +52,11 @@ class CustomAdapter(private val dataSet: ArrayList<contry>) :
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-        viewHolder.tv_name_contry.text = dataSet[position].name_contry
-        viewHolder.tv_cases.text = dataSet[position].cases.toString()
-        viewHolder.tv_recovered.text = dataSet[position].recovered.toString()
-        viewHolder.tv_deaths.text = dataSet[position].deaths.toString()
+        var numberf = NumberFormat.getInstance()
+        viewHolder.tv_name_contry.text = dataSet[position].name_contry.toString()
+        viewHolder.tv_cases.text = numberf.format(dataSet[position].cases).toString()
+        viewHolder.tv_recovered.text = numberf.format(dataSet[position].recovered).toString()
+        viewHolder.tv_deaths.text = numberf.format(dataSet[position].deaths).toString()
         Glide.with(G.context).load(dataSet[position].img_flag).into(viewHolder.img_flag)
 
         viewHolder.layout_item.setOnClickListener { it ->
