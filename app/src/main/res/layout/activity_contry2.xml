@@ -158,19 +158,20 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="30dp"
-            android:layout_marginRight="8dp">
+            android:layout_marginRight="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:elevation="4dp"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:paddingBottom="8dp"
+                android:paddingLeft="24dp"
                 android:paddingTop="8dp"
                 android:paddingRight="24dp"
-                android:paddingLeft="24dp">
+                android:paddingBottom="8dp">
 
                 <ImageView
                     android:layout_width="60dp"
@@ -203,19 +204,20 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="30dp"
-            android:layout_marginRight="8dp">
+            android:layout_marginRight="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:elevation="4dp"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:paddingBottom="8dp"
+                android:paddingLeft="24dp"
                 android:paddingTop="8dp"
                 android:paddingRight="24dp"
-                android:paddingLeft="24dp">
+                android:paddingBottom="8dp">
 
                 <ImageView
                     android:layout_width="60dp"
@@ -248,18 +250,19 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="30dp">
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:elevation="4dp"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:paddingBottom="8dp"
+                android:paddingLeft="24dp"
                 android:paddingTop="8dp"
                 android:paddingRight="24dp"
-                android:paddingLeft="24dp">
+                android:paddingBottom="8dp">
 
                 <ImageView
                     android:layout_width="60dp"

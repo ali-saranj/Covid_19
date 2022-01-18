@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">کرونا</string>
+    <string name="total_cases" translatable="false">مجموع مبتاتها</string>
+    <string name="recovered" translatable="false">درمان شدگان</string>
+    <string name="deaths" translatable="false">کشته شدگان</string>
+    <string name="active" translatable="false">فعال</string>
+    <string name="list_countrys" translatable="false">لیست کشور ها</string>
+    <string name="total_deaths" translatable="false">مجموع کشته شدگان</string>
+    <string name="today_deaths" translatable="false">کشته شدگان امروز</string>
+    <string name="cases" translatable="false">مبتلاها</string>
+    <string name="affected_countries" translatable="false">کشورهای آسیب دیده</string>
+    <string name="critical" translatable="false">بحرانی</string>
+    <string name="global_stats" translatable="false">آمار جهانی</string>
+</resources>

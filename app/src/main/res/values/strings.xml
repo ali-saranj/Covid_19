@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">Covid_19</string>
+    <string name="app_name" translatable="false">Covid_19</string>
+    <string name="total_cases" translatable="false">Total Cases</string>
+    <string name="recovered" translatable="false">Recovered</string>
+    <string name="deaths" translatable="false">Deaths</string>
+    <string name="active" translatable="false">Active</string>
+    <string name="global_stats" translatable="false">Global Stats</string>
+    <string name="critical" translatable="false">Critical</string>
+    <string name="total_deaths" translatable="false">Total Deaths</string>
+    <string name="today_deaths" translatable="false">Today Deaths</string>
+    <string name="affected_countries" translatable="false">Affected Countries</string>
+    <string name="list_countrys" translatable="false">List Countries</string>
+    <string name="cases" translatable="false">Cases</string>
 </resources>

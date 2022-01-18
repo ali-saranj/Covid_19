@@ -64,7 +64,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
                         android:gravity="center"
-                        android:text="Total Cases"
+                        android:text="@string/total_cases"
                         android:textSize="14sp" />
 
                 </LinearLayout>
@@ -86,7 +86,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
                         android:gravity="center"
-                        android:text="Recovered"
+                        android:text="@string/recovered"
                         android:textSize="14sp" />
 
                 </LinearLayout>
@@ -108,7 +108,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
                         android:gravity="center"
-                        android:text="Deaths"
+                        android:text="@string/deaths"
                         android:textSize="14sp" />
 
                 </LinearLayout>
@@ -130,7 +130,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
                         android:gravity="center"
-                        android:text="Active"
+                        android:text="@string/active"
                         android:textSize="14sp" />
 
                 </LinearLayout>
@@ -183,7 +183,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="20dp"
-                        android:text="global stats"
+                        android:text="@string/global_stats"
                         android:textAllCaps="true"
                         android:gravity="left"
                         android:textSize="28sp"
@@ -208,7 +208,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Cases"
+                            android:text="@string/cases"
                             android:fontFamily="sans-serif-light"
                             android:textSize="18sp" />
 
@@ -245,7 +245,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
-                            android:text="Recovored"
+                            android:text="@string/recovered"
                             android:textSize="18sp" />
 
                         <TextView
@@ -282,7 +282,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
-                            android:text="Critical"
+                            android:text="@string/critical"
                             android:textSize="18sp" />
 
                         <TextView
@@ -320,7 +320,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
-                            android:text="Active"
+                            android:text="@string/active"
                             android:textSize="18sp" />
 
                         <TextView
@@ -358,7 +358,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
-                            android:text="Today Cases"
+                            android:text="@string/total_cases"
                             android:textSize="18sp" />
 
                         <TextView
@@ -396,7 +396,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
-                            android:text="Total Deaths"
+                            android:text="@string/total_deaths"
                             android:textSize="18sp" />
 
                         <TextView
@@ -434,7 +434,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
-                            android:text="Today Deaths"
+                            android:text="@string/today_deaths"
                             android:textSize="18sp" />
 
                         <TextView
@@ -472,7 +472,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
-                            android:text="Affected Countries"
+                            android:text="@string/affected_countries"
                             android:textSize="18sp" />
 
                         <TextView
@@ -509,7 +509,7 @@
         android:id="@+id/btn_go"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="List Countrys"
+        android:text="@string/list_countrys"
         android:textSize="18sp"
         android:padding="10dp"
         app:layout_constraintLeft_toLeftOf="parent"
