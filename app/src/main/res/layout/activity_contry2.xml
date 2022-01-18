@@ -69,7 +69,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
                         android:gravity="center"
-                        android:text="Total Cases"
+                        android:text="@string/total_cases"
                         android:textSize="14sp" />
 
                 </LinearLayout>
@@ -91,7 +91,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
                         android:gravity="center"
-                        android:text="Recovered"
+                        android:text="@string/recovered"
                         android:textSize="14sp" />
 
                 </LinearLayout>
@@ -113,7 +113,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
                         android:gravity="center"
-                        android:text="Deaths"
+                        android:text="@string/deaths"
                         android:textSize="14sp" />
 
                 </LinearLayout>
@@ -135,7 +135,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
                         android:gravity="center"
-                        android:text="Active"
+                        android:text="@string/active"
                         android:textSize="14sp" />
 
                 </LinearLayout>
@@ -182,9 +182,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Cases"
+                    android:text="@string/cases"
                     android:textColor="@color/black"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -228,9 +228,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Recovery"
+                    android:text="@string/recovered"
                     android:textColor="@color/black"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -273,9 +273,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Deaths"
+                    android:text="@string/deaths"
                     android:textColor="@color/black"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <TextView
