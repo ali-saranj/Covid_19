@@ -81,6 +81,10 @@ class MainActivity : AppCompatActivity() {
         ppp.visibility = View.GONE
         sss.visibility = View.VISIBLE
 
+        if (G.contrys.size!=0){
+            btn_go.isEnabled = true
+        }
+
         tv_cases.text = numberf.format(data.getInt("cases"))
         tv_active.text = numberf.format(data.getInt("active"))
         tv_affected_countries.text = numberf.format(data.getInt("affectedCountries"))
