@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity() {
         val stringRequest = StringRequest(
             Request.Method.GET, url,
             { response ->
+                btn_go.isEnabled = true
                 setData(JSONObject(response))
             },
             {
@@ -81,7 +82,7 @@ class MainActivity : AppCompatActivity() {
         ppp.visibility = View.GONE
         sss.visibility = View.VISIBLE
 
-        btn_go.isEnabled = true
+
 
         tv_cases.text = numberf.format(data.getInt("cases"))
         tv_active.text = numberf.format(data.getInt("active"))

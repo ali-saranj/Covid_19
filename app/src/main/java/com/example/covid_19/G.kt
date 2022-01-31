@@ -31,7 +31,7 @@ class G : Application() {
         context = applicationContext
 
         val queue = Volley.newRequestQueue(this)
-        val url = "https://corona.lmao.ninja/v2/countries/"
+        val url = "https://corona.lmao.ninja/v2/Countries?yesterday=true&sort"
 
         contrys = ArrayList()
 

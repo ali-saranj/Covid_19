@@ -8,10 +8,13 @@
     <string name="list_countrys" translatable="false">لیست کشور ها</string>
     <string name="total_deaths" translatable="false">مجموع کشته شدگان</string>
     <string name="today_deaths" translatable="false">کشته شدگان امروز</string>
-    <string name="cases" translatable="false">مبتلاها</string>
+    <string name="cases" translatable="false">مبتلا شدگان</string>
     <string name="affected_countries" translatable="false">کشورهای آسیب دیده</string>
     <string name="critical" translatable="false">بحرانی</string>
     <string name="global_stats" translatable="false">آمار جهانی</string>
     <string name="toast_activity_list" translatable="false">برای دریافت اطلاعات بیشتر روی کشور ها کلیک کنید</string>
+    <string name="today_cases" translatable="false">مبتلا شرگان امروز</string>
+    <string name="today_recovered" translatable="false">درمان شدگان امروز</string>
+    <string name="today">امروز</string>
 
 </resources>

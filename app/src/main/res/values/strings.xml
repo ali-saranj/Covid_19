@@ -2,6 +2,7 @@
     <string name="app_name" translatable="false">Covid_19</string>
     <string name="total_cases" translatable="false">Total Cases</string>
     <string name="recovered" translatable="false">Recovered</string>
+    <string name="today_recovered" translatable="false">Today Recovered</string>
     <string name="deaths" translatable="false">Deaths</string>
     <string name="active" translatable="false">Active</string>
     <string name="global_stats" translatable="false">Global Stats</string>
@@ -11,6 +12,8 @@
     <string name="affected_countries" translatable="false">Affected Countries</string>
     <string name="list_countrys" translatable="false">List Countries</string>
     <string name="cases" translatable="false">Cases</string>
+    <string name="today_cases" translatable="false">Today Cases</string>
     <string name="toast_activity_list" translatable="false">Click on countries for more informationClick on countries for more information</string>
+    <string name="today">Today</string>
 
 </resources>
