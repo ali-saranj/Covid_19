@@ -13,24 +13,35 @@
         android:supportsRtl="false"
         android:theme="@style/Theme.Covid_19">
         <activity
-            android:name=".ContryActivity2"
-            android:theme="@style/Theme.Covid_19.NoActionBar"
-            android:screenOrientation="portrait"
-            android:exported="true" />
+            android:name=".AboutCovidActivity"
+            android:exported="false" />
         <activity
-            android:name=".ListContryActivity2"
-            android:screenOrientation="portrait"
-            android:exported="true" />
+            android:name=".AboutMe"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="true"
             android:screenOrientation="portrait"
-            android:exported="true">
+            android:theme="@style/Theme.Covid_19.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ContryActivity2"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Covid_19.NoActionBar" />
+        <activity
+            android:name=".ListContryActivity2"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AmarActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

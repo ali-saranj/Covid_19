@@ -16,5 +16,16 @@
     <string name="today_cases" translatable="false">مبتلا شرگان امروز</string>
     <string name="today_recovered" translatable="false">درمان شدگان امروز</string>
     <string name="today">امروز</string>
+    <string name="coronaـstatistics" translatable="false">آمار کرونا</string>
+    <string name="abuot_me">درباره من</string>
+    <string name="abuot_covid" translatable="false">درباره کرونا</string>
+    <string name="emeni" translatable="false">پروتکل های بهداشتی</string>
+    <string name="health_protocols" translatable="false">پروتکل های بهداشتی</string>
+    <string name="mask" translatable="false">ماسک زدن</string>
+    <string name="dast" translatable="false">شستن دست ها</string>
+    <string name="eys" translatable="false">دست نزدن به چشم ها</string>
+    <string name="fasle" translatable="false">رعایت فاصله</string>
+    <string name="zedofoni" translatable="false">ضدعفونی کردن</string>
+    <string name="Discrip" translatable="false">ویروس کرونا (نام علمی: Coronaviruses)، گروهی از ویروس‌ها متعلق به خانوادهٔ ویروسی کروناویریده هستند که از طریق ایجاد عفونت دستگاه تنفسی در پرندگان و پستانداران، ایجاد بیماری می‌کنند.[۱] این ویروس‌ها می‌توانند عامل ایجاد برخی از انواع سرماخوردگی معمولی تا عامل بیماری‌های شدیدتری همچون سارس، مرس و کووید ۱۹ باشند.[۲][۳] کروناویروس‌ها در دههٔ ۱۹۶۰ کشف شدند[۴] و مطالعه بر روی آن‌ها به‌طور مداوم تا اواسط دهه ۱۹۸۰ ادامه داشت.[۵][۶] اندازهٔ ژنوم ویروس‌های کرونا از ۲۶ تا ۳۲ کیلوباز، متغیر است که از بزرگ‌ترین ژنوم‌ها در بین ژنوم تمام آران‌ای ویروس‌ها هستند.[۷] این ویروس‌ها به‌طور طبیعی در انسان‌ها و پستانداران و پرندگان شیوع پیدا می‌کنند، با این حال تاکنون میلیون‌ها کروناویروس منتقل شده به انسان، کشف شده‌است. آخرین نوع آن‌ها، کروناویروس سندرم حاد تنفسی ۲ (SARS-CoV-2)، در دسامبر ۲۰۱۹ در شهر ووهان چین با همه‌گیری در انسان شیوع پیدا کرد. شیوع این کروناویروس پس از مدت کوتاهی تبدیل به دنیاگیری شد و تمام جهان را نگران کرد و تبدیل به بحران بین المللی رسید.[۸]</string>
 
 </resources>

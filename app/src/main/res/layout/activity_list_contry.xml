@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".ListContryActivity2"
     android:orientation="vertical"
-    android:background="@color/color_two">
+    android:background="@color/color_white">
 
 
     <EditText
@@ -27,7 +27,7 @@
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/color_two">
+        android:background="@color/color_white">
 
         <requestFocus/>
     </androidx.recyclerview.widget.RecyclerView>

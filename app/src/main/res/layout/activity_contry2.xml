@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ContryActivity2"
-    android:background="@color/color_two">
+    android:background="@color/color_white">
 
     <include layout="@layout/tollbar_contry_activity2"
         android:id="@+id/toolbb"
@@ -161,7 +161,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="8dp"
             app:cardCornerRadius="20dp"
-            app:cardElevation="4dp">
+            app:cardElevation="2dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -257,7 +257,6 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:elevation="4dp"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:paddingLeft="18dp"
