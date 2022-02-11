@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var btn_statistics:CardView
     lateinit var btn_about:CardView
     lateinit var btn_about_coid:CardView
+    lateinit var btn_test_coid:CardView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +34,11 @@ class MainActivity : AppCompatActivity() {
             it.startAnimation(AnimationUtils.loadAnimation(applicationContext,android.R.anim.fade_in))
             startActivity(Intent(applicationContext,AboutCovidActivity::class.java))
         }
+        btn_test_coid.setOnClickListener {
+
+            it.startAnimation(AnimationUtils.loadAnimation(applicationContext,android.R.anim.fade_in))
+            startActivity(Intent(applicationContext,TestCoivdActivity::class.java))
+        }
 
     }
 
@@ -40,5 +46,6 @@ class MainActivity : AppCompatActivity() {
         btn_statistics = findViewById(R.id.btn_main_statistics)
         btn_about = findViewById(R.id.btn_main_about)
         btn_about_coid = findViewById(R.id.btn_main_about_covid)
+        btn_test_coid = findViewById(R.id.btn_main_test_covid)
     }
 }

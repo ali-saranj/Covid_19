@@ -13,6 +13,7 @@
     <string name="list_countrys" translatable="false">List Countries</string>
     <string name="cases" translatable="false">Cases</string>
     <string name="today_cases" translatable="false">Today Cases</string>
+    <string name="emeni" translatable="false">پروتکل های بهداشتی</string>
     <string name="toast_activity_list" translatable="false">Click on countries for more informationClick on countries for more information</string>
     <string name="today">Today</string>
     <string name="coronaـstatistics" translatable="false">Corona statistics</string>
@@ -24,9 +25,24 @@
     <string name="eys" translatable="false">Do Not Touch The Eyes</string>
     <string name="zedofoni" translatable="false">Disinfect</string>
     <string name="fasle" translatable="false">Observe The Distance</string>
+    <string name="Corona_test" translatable="false">Corona test</string>
+    <string name="yes" translatable="false">Yes</string>
+    <string name="no" translatable="false">No</string>
     <string name="Discrip" translatable="false">Coronaviruses are a group of related RNA viruses that cause diseases in mammals and birds. In humans and birds, they cause respiratory tract infections that can range from mild to lethal. Mild illnesses in humans include some cases of the common cold (which is also caused by other viruses, predominantly rhinoviruses), while more lethal varieties can cause SARS, MERS and COVID-19, which is causing an ongoing pandemic. In cows and pigs they cause diarrhea, while in mice they cause hepatitis and encephalomyelitis.
-
 Coronaviruses constitute the subfamily Orthocoronavirinae, in the family Coronaviridae, order Nidovirales and realm Riboviria.[3][4] They are enveloped viruses with a positive-sense single-stranded RNA genome and a nucleocapsid of helical symmetry.[5] The genome size of coronaviruses ranges from approximately 26 to 32 kilobases, one of the largest among RNA viruses.[6] They have characteristic club-shaped spikes that project from their surface, which in electron micrographs create an image reminiscent of the solar corona, from which their name derives.[7]</string>
+    <string name="name" translatable="false">Alisarang</string>
+
+    <string-array name="covid_test_array" translatable="false">
+        <item>"aaaaa"</item>
+        <item>"aa"</item>
+        <item>"aaaaaa"</item>
+        <item>"dadd"</item>
+        <item>"sdfafaf"</item>
+        <item>"fdfadf"</item>
+        <item>"fadfdaf"</item>
+        <item>"sfsfdfas"</item>
+        <item>"fasdfdfgsdgdd"</item>
+    </string-array>
 
 
 </resources>

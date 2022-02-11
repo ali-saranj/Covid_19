@@ -3,6 +3,7 @@
     package="com.example.covid_19">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:name=".G"
@@ -13,11 +14,19 @@
         android:supportsRtl="false"
         android:theme="@style/Theme.Covid_19">
         <activity
+            android:name=".TestCoivdActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Covid_19.NoActionBar" />
+        <activity
             android:name=".AboutCovidActivity"
-            android:exported="false" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".AboutMe"
-            android:exported="false" />
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Covid_19.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
