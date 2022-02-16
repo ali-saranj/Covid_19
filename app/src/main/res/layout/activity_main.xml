@@ -35,16 +35,16 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btn_main_test_covid"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="160dp"
+                    android:layout_height="170dp"
                     android:layout_margin="8dp"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="30dp"
                     app:cardElevation="4dp">
 
                     <LinearLayout
-                        android:layout_width="150dp"
-                        android:layout_height="160dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:paddingLeft="20dp"
@@ -72,8 +72,8 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btn_main_statistics"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="160dp"
+                    android:layout_height="170dp"
                     android:layout_margin="8dp"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="30dp"
@@ -81,8 +81,8 @@
                     app:cardElevation="4dp">
 
                     <LinearLayout
-                        android:layout_width="150dp"
-                        android:layout_height="160dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:paddingLeft="20dp"
@@ -116,16 +116,16 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btn_main_about"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="160dp"
+                    android:layout_height="170dp"
                     android:layout_margin="8dp"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="30dp"
                     app:cardElevation="4dp">
 
                     <LinearLayout
-                        android:layout_width="150dp"
-                        android:layout_height="160dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:paddingLeft="20dp"
@@ -153,16 +153,16 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btn_main_about_covid"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="160dp"
+                    android:layout_height="170dp"
                     android:layout_margin="8dp"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="30dp"
                     app:cardElevation="4dp">
 
                     <LinearLayout
-                        android:layout_width="150dp"
-                        android:layout_height="160dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:paddingLeft="20dp"
