@@ -1,3 +1,1 @@
-<htm>
-    <b sizeof = 40sp>ali</b>
-</htm>
+<span style="font-size:20px">برنامه جرعت و حقیقت</span>
