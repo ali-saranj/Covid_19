@@ -12,6 +12,7 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
+import java.lang.Exception
 
 
 class AboutMe : AppCompatActivity() {
@@ -25,16 +26,22 @@ class AboutMe : AppCompatActivity() {
         setContentView(R.layout.activity_about_me)
 
         findid()
+        ActivityCompat.requestPermissions(this@AboutMe, arrayOf(Manifest.permission.CALL_PHONE),1)
+
 
         image_phone.setOnClickListener {
             it.startAnimation(AnimationUtils.loadAnimation(applicationContext,android.R.anim.fade_in))
 
-            ActivityCompat.requestPermissions(this@AboutMe, arrayOf(Manifest.permission.CALL_PHONE),1)
-            val posted_by = "09136978682"
-            val uri = "tel:$posted_by"
-            val intent = Intent(Intent.ACTION_CALL)
-            intent.data = Uri.parse(uri)
-            startActivity(intent)
+            try {
+                val posted_by = "09136978682"
+                val uri = "tel:$posted_by"
+                val intent = Intent(Intent.ACTION_CALL)
+                intent.data = Uri.parse(uri)
+                startActivity(intent)
+            }catch (e:Exception){
+                ActivityCompat.requestPermissions(this@AboutMe, arrayOf(Manifest.permission.CALL_PHONE),1)
+            }
+
 
 
         }
@@ -53,6 +60,8 @@ class AboutMe : AppCompatActivity() {
             it.startAnimation(AnimationUtils.loadAnimation(applicationContext,android.R.anim.fade_in))
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("http://alisaranj.blogfa.com/post/1")))
         }
+
+
     }
 
     private fun findid() {

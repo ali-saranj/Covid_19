@@ -3,7 +3,9 @@ package com.example.covid_19
 import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.animation.AnimationUtils
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 
@@ -11,6 +13,7 @@ class TestCoivdActivity : AppCompatActivity() {
     lateinit var tv_question:TextView
     lateinit var btn_yes:Button
     lateinit var btn_no:Button
+    lateinit var btn_back:ImageView
     lateinit var array: Array<String>
     var rent=0
     var i = 0
@@ -43,6 +46,11 @@ class TestCoivdActivity : AppCompatActivity() {
             }
         }
 
+        btn_back.setOnClickListener {
+            it.startAnimation(AnimationUtils.loadAnimation(applicationContext,android.R.anim.fade_in))
+            finish()
+        }
+
     }
 
     private fun showDialoga() {
@@ -65,7 +73,7 @@ class TestCoivdActivity : AppCompatActivity() {
 
             }
         }
-        var dialog = AlertDialog.Builder(this)
+        val dialog = AlertDialog.Builder(this)
         dialog.setTitle("نتیچه تست کرونا")
         dialog.setMessage(text)
         dialog.setCancelable(false)
@@ -81,5 +89,6 @@ class TestCoivdActivity : AppCompatActivity() {
         tv_question = findViewById(R.id.tv_test_covid_question)
         btn_no = findViewById(R.id.btn_test_covid_no)
         btn_yes = findViewById(R.id.btn_test_covid_yes)
+        btn_back = findViewById(R.id.btn_back_test_covid)
     }
 }

@@ -7,6 +7,14 @@
     android:background="@drawable/bacgrand"
     tools:context=".TestCoivdActivity">
 
+    <ImageView
+        android:id="@+id/btn_back_test_covid"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_keyboard_backspace_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
     <TextView
         android:id="@+id/tvtttttt"
         android:layout_width="wrap_content"
