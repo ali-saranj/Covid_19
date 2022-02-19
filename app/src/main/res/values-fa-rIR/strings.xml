@@ -31,6 +31,7 @@
     <string name="Corona_test" translatable="false">تست کرونا</string>
     <string name="yes" translatable="false">بله</string>
     <string name="no" translatable="false">خیر</string>
+    <string name="about_me">سلام من علی سارنج متولد ۱۴ مهر ۱۳۸۴ واصفهانی هستم ۲ ساله در زمینه برنامه نویسی اندروید فعالیت میکنم برنامه نویسی بزرگ ترین علاقه من تو زندگی هست برنامه نویسی را به صورت کاملا خود آموز یاد گرفتم اصلی ترین حدف و دلیل شرکت کردنم در این مسابقه تست و سنحش خودم بود که بتونم بفهمم تو مدت این دوسال چقدر تونستم به صورت خود آموز بیشرفت کنم و اکنون نسبت به بقیه در چه سطحی هستم</string>
 
     <string-array name="covid_test_array" translatable="false">
         <item>"آیا دمای بدن شما ۳۷ یا بیشتر از آن است؟"</item>
@@ -40,8 +41,12 @@
         <item>"آیا در قفسه سینه خود احساس درد دارید؟"</item>
         <item>"آیا گلو درد دارید؟"</item>
         <item>"آیا سردرد دارید؟"</item>
-        <item>"آیا به تازگی با اشخاص مبتلا ملاقات داشتید"</item>
-        <item>"آیا دل درد دارید"</item>
+        <item>"آیا به تازگی با اشخاص مبتلا ملاقات داشتید؟"</item>
+        <item>"آیا دل درد دارید؟"</item>
     </string-array>
+    <string name="ehtmalcam" translatable="false">احتمال کرونا داشتن شما خیلی کمه ولی اگر دوست دارید می توانید برای راحتی خیال خود به دکتر مراجعه کنید</string>
+    <string name="ehtmalmotovaset" translatable="false">احتمال کرونا داشتن شما کمه ولی بهتره به دکتر مراجعه کنید مراجعه کنید</string>
+    <string name="ehtmalziad" translatable="false">احتمال کرونا داشتن شما زیاده در اولین فرصت دکتر مراجعه کنید</string>
+    <string name="ehtmalglyziad" translatable="false">احتمال کرونا داشتن شما خیلی زیاده در اولین فرصت دکتر مراجعه کنید</string>
 
 </resources>

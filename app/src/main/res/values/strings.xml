@@ -15,9 +15,9 @@
     <string name="today_cases" translatable="false">Today Cases</string>
     <string name="emeni" translatable="false">پروتکل های بهداشتی</string>
     <string name="toast_activity_list" translatable="false">Click on countries for more informationClick on countries for more information</string>
-    <string name="today">Today</string>
+    <string name="today" translatable="false">Today</string>
     <string name="coronaـstatistics" translatable="false">Corona statistics</string>
-    <string name="abuot_me">About me</string>
+    <string name="abuot_me" translatable="false">About me</string>
     <string name="abuot_covid" translatable="false">About Covid</string>
     <string name="health_protocols" translatable="false">Health Protocols</string>
     <string name="mask" translatable="false">Mask</string>
@@ -31,18 +31,23 @@
     <string name="Discrip" translatable="false">Coronaviruses are a group of related RNA viruses that cause diseases in mammals and birds. In humans and birds, they cause respiratory tract infections that can range from mild to lethal. Mild illnesses in humans include some cases of the common cold (which is also caused by other viruses, predominantly rhinoviruses), while more lethal varieties can cause SARS, MERS and COVID-19, which is causing an ongoing pandemic. In cows and pigs they cause diarrhea, while in mice they cause hepatitis and encephalomyelitis.
 Coronaviruses constitute the subfamily Orthocoronavirinae, in the family Coronaviridae, order Nidovirales and realm Riboviria.[3][4] They are enveloped viruses with a positive-sense single-stranded RNA genome and a nucleocapsid of helical symmetry.[5] The genome size of coronaviruses ranges from approximately 26 to 32 kilobases, one of the largest among RNA viruses.[6] They have characteristic club-shaped spikes that project from their surface, which in electron micrographs create an image reminiscent of the solar corona, from which their name derives.[7]</string>
     <string name="name" translatable="false">Alisarang</string>
+    <string name="ehtmalcam" translatable="false">You are very unlikely to have a corona, but if you like, you can see a doctor for comfort</string>
+    <string name="ehtmalmotovaset" translatable="false">You are less likely to have coronary but it is better to see a doctor</string>
+    <string name="ehtmalziad" translatable="false">See your doctor as soon as possible if you have a corona</string>
+    <string name="ehtmalglyziad" translatable="false">You are very likely to see a doctor at the first opportunity</string>
 
     <string-array name="covid_test_array" translatable="false">
-        <item>"aaaaa"</item>
-        <item>"aa"</item>
-        <item>"aaaaaa"</item>
-        <item>"dadd"</item>
-        <item>"sdfafaf"</item>
-        <item>"fdfadf"</item>
-        <item>"fadfdaf"</item>
-        <item>"sfsfdfas"</item>
-        <item>"fasdfdfgsdgdd"</item>
+        <item>"Is your body temperature 37 or higher?"</item>
+        <item>"Do you feel tired and weak?"</item>
+        <item>"Do you cough?"</item>
+        <item>"Did you lose your sense of smell and taste?"</item>
+        <item>"Do you feel pain in your chest?"</item>
+        <item>"Do you have a sore throat?"</item>
+        <item>"Do you have a headache?"</item>
+        <item>"Have you recently met with infected people?"</item>
+        <item>"Do you have heartburn?"</item>
     </string-array>
+    <string name="about_me" translatable="false">Hello, I am Ali Saranj, born on October 5, 2005 in Isfahan. I have been working in the field of Android programming for 2 years. Programming is my biggest interest in life. I learned programming in a completely self-taught way. It was my destiny to be able to understand how much I was able to become self-taught during these two years and what level I am now compared to the rest.</string>
 
 
 </resources>

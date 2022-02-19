@@ -65,7 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:text="سلام من علی سارنج متولد ۱۴ مهر ۱۳۸۴ واصفهانی هستم ۲ ساله در زمینه برنامه نویسی اندروید فعالیت میکنم برنامه نویسی بزرگ ترین علاقه من تو زندگی هست برنامه نویسی را به صورت کاملا خود آموز یاد گرفتم اصلی ترین حدف و دلیل شرکت کردنم در این مسابقه تست و سنحش خودم بود که بتونم بفهمم تو مدت این دوسال چقدر تونستم تو این دوسال به صورت خود آموز بیشرفت کنم و اکنون نسبت به بقیه در چه سطحی هستم"
+        android:text="@string/about_me"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
