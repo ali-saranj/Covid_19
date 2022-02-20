@@ -48,6 +48,7 @@ Coronaviruses constitute the subfamily Orthocoronavirinae, in the family Coronav
         <item>"Do you have heartburn?"</item>
     </string-array>
     <string name="about_me" translatable="false">Hello, I am Ali Saranj, born on October 5, 2005 in Isfahan. I have been working in the field of Android programming for 2 years. Programming is my biggest interest in life. I learned programming in a completely self-taught way. It was my destiny to be able to understand how much I was able to become self-taught during these two years and what level I am now compared to the rest.</string>
+    <string name="natige_coroma">Corona test result</string>
 
 
 </resources>

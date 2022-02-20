@@ -58,23 +58,23 @@ class TestCoivdActivity : AppCompatActivity() {
 
         when{
             rent<2 ->{
-                text = "احتمال کرونا داشتن شما خیلی کمه ولی اگر دوست دارید می توانید برای راحتی خیال خود به دکتر مراجعه کنید"
+                text = resources.getString(R.string.ehtmalcam)
             }
             rent in 2..4 ->{
-                text = "احتمال کرونا داشتن شما کمه ولی بهتره به دکتر مراجعه کنید مراجعه کنید"
+                text = resources.getString(R.string.ehtmalmotovaset)
             }
             rent in 4..8 ->{
-                text = "احتمال کرونا داشتن شما زیاده در اولین فرست دکتر مراجعه کنید"
+                text = resources.getString(R.string.ehtmalziad)
             }
             rent in 8 until 10 ->{
-                text = "احتمال کرونا داشتن شما خیلی زیاده در اولین فرست دکتر مراجعه کنید"
+                text = resources.getString(R.string.ehtmalglyziad)
             }
             else->{
 
             }
         }
         val dialog = AlertDialog.Builder(this)
-        dialog.setTitle("نتیچه تست کرونا")
+        dialog.setTitle(resources.getString(R.string.natige_coroma))
         dialog.setMessage(text)
         dialog.setCancelable(false)
         dialog.setNeutralButton(R.string.yes, DialogInterface.OnClickListener { dialog, which ->

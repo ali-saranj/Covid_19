@@ -48,5 +48,6 @@
     <string name="ehtmalmotovaset" translatable="false">احتمال کرونا داشتن شما کمه ولی بهتره به دکتر مراجعه کنید مراجعه کنید</string>
     <string name="ehtmalziad" translatable="false">احتمال کرونا داشتن شما زیاده در اولین فرصت دکتر مراجعه کنید</string>
     <string name="ehtmalglyziad" translatable="false">احتمال کرونا داشتن شما خیلی زیاده در اولین فرصت دکتر مراجعه کنید</string>
+    <string name="natige_coroma">نتیچه تست کرونا</string>
 
 </resources>
