@@ -21,7 +21,8 @@
         <activity
             android:name=".AboutCovidActivity"
             android:exported="true"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Covid_19.NoActionBar"/>
         <activity
             android:name=".AboutMe"
             android:exported="true"
@@ -50,6 +51,7 @@
         <activity
             android:name=".AmarActivity"
             android:exported="true"
+            android:theme="@style/Theme.Covid_19.NoActionBar"
             android:screenOrientation="portrait" />
     </application>
 

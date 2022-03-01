@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.view.animation.AnimationUtils
 import android.widget.*
 import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
@@ -24,6 +25,7 @@ class AmarActivity : AppCompatActivity() {
     lateinit var tv_today_deaths: TextView
     lateinit var tv_affected_countries: TextView
     lateinit var btn_go: Button
+    lateinit var btn_back: ImageView
     lateinit var pie_chart: PieChart
     lateinit var sss: ScrollView
     lateinit var ppp: ProgressBar
@@ -54,6 +56,11 @@ class AmarActivity : AppCompatActivity() {
 
         btn_go.setOnClickListener { startActivity(Intent(this,ListContryActivity2::class.java)) }
 
+        btn_back.setOnClickListener {
+            it.startAnimation(AnimationUtils.loadAnimation(this,android.R.anim.fade_in))
+            finish()
+        }
+
     }
 
     private fun findId() {
@@ -65,6 +72,7 @@ class AmarActivity : AppCompatActivity() {
        tv_today_cases = findViewById(R.id.tvTodayCases)
        tv_today_deaths = findViewById(R.id.tvTodayDeaths)
        tv_total_deaths = findViewById(R.id.tvTotalDeaths)
+        btn_back = findViewById(R.id.btn_back_amar)
 
        pie_chart = findViewById(R.id.piechart)
        btn_go = findViewById(R.id.btn_go)
