@@ -8,6 +8,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.MotionEvent
 import android.view.View
+import android.view.animation.AnimationUtils
 import android.widget.*
 import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -24,6 +25,7 @@ class ListContryActivity2 : AppCompatActivity() {
     lateinit var contrys: ArrayList<contry>
     lateinit var list: RecyclerView
     lateinit var edt_search: EditText
+    lateinit var btn_back: ImageView
 
     lateinit var customAdapter: CustomAdapter
 
@@ -42,6 +44,7 @@ class ListContryActivity2 : AppCompatActivity() {
 
         list = findViewById(R.id.list)
         edt_search = findViewById(R.id.edt_search)
+        btn_back = findViewById(R.id.btn_back_contry_list)
 
         Toast.makeText(this,resources.getString(R.string.toast_activity_list), Toast.LENGTH_SHORT).show()
 
@@ -60,6 +63,11 @@ class ListContryActivity2 : AppCompatActivity() {
             }
             override fun afterTextChanged(s: Editable) {}
         })
+
+        btn_back.setOnClickListener {
+            it.startAnimation(AnimationUtils.loadAnimation(this,android.R.anim.fade_in))
+            finish()
+        }
 
 
     }
