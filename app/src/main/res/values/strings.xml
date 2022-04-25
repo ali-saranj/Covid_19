@@ -49,6 +49,11 @@ Coronaviruses constitute the subfamily Orthocoronavirinae, in the family Coronav
     </string-array>
     <string name="about_me" translatable="false">Hello, I am Ali Saranj, born on October 5, 2005 in Isfahan. I have been working in the field of Android programming for 2 years. Programming is my biggest interest in life. I learned programming in a completely self-taught way. It was my destiny to be able to understand how much I was able to become self-taught during these two years and what level I am now compared to the rest.</string>
     <string name="natige_coroma">Corona test result</string>
+    <string name="abart" translatable="false">Phrasebook application features</string>
+    <string name="abot_test_covid" translatable="false">Corona test: In this part, the program will ask you questions and according to your answers to the questions, you will say how likely you are to have a corona</string>
+    <string name="about_abut_covid" translatable="false">About Corona: In this section you will be given information about Corona which was the source of this site https://en.wikipedia.org/wiki/COVID-19</string>
+    <string name="about_about_me" translatable="false">About us: In this section, you will get acquainted with the creator of this program. Also, the blog of the manufacturer\'s contact number and email is in this section.</string>
+    <string name="about_amar_covid">Corona statistics: In this section, you can view the corona statistics of the whole world and each country of the world online and up to date.\nSources: https://corona.lmao.ninja/v2/Countries?yesterday=true&amp;sort / https://corona.lmao.ninja/v2/all/</string>
 
 
 </resources>

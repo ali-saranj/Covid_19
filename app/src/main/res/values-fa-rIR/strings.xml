@@ -49,5 +49,11 @@
     <string name="ehtmalziad" translatable="false">احتمال کرونا داشتن شما زیاده در اولین فرصت دکتر مراجعه کنید</string>
     <string name="ehtmalglyziad" translatable="false">احتمال کرونا داشتن شما خیلی زیاده در اولین فرصت دکتر مراجعه کنید</string>
     <string name="natige_coroma">نتیچه تست کرونا</string>
+    <string name="abart" translatable="false">ویژگی های برنامه عبارت انداز</string>
+
+    <string name="abot_test_covid">تست کرونا : در این قسمت برنامه از شما سوال هایی می کند و با توجه به جواب شما به سوالات میگویید که احتمال کرونا داشتن شما چقدر است</string>
+    <string name="about_abut_covid">درباره کرونا : در این قسمت به شما اطلاعاتی درباره کرونا داده می شود که منبع این سایت بوده است https://en.wikipedia.org/wiki/COVID-19</string>
+    <string name="about_about_me">درباره ما : در این بخش شما با سازنده این برنامه آشنا میشود هم چنین وبلاگ شماره تماس و ایمیل سازنده در این قسمت قرار دارد</string>
+    <string name="about_amar_covid">آمار کرونا : در این قسمت شما می‌توانید آمار کرونا کل جهان و تک تک کشور های جهان را به صورت بروز و انلاین مشاهده کنید \n منابع : https://corona.lmao.ninja/v2/all/ / https://corona.lmao.ninja/v2/Countries?yesterday=true</string>
 
 </resources>
